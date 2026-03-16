@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: raw_uber
+    schema: main
+    tables:
+      - name: UberDataset1
+      - name: UberDataset2
+      - name: cities_with_countries

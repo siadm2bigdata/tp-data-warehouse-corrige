@@ -1,0 +1,17 @@
+name: 'tp_uber_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'tp_uber_dbt'
+
+model-paths: ["models"]
+target-path: "target"
+
+models:
+  tp_uber_dbt:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table
